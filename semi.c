@@ -6,6 +6,7 @@
 #include <sys/sem.h>
 #include <string.h>
 #include <pthread.h>
+#include <time.h>
 
 union semun {
     int val;
@@ -100,6 +101,7 @@ void *mythread(void *arg)
 
 int main(int argc, char *argv[])
 {
+    float time;
     key_t key;
     int semid;
     union semun arg;
