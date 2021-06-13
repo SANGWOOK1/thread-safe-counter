@@ -20,3 +20,11 @@ However, in the case of a semaphore, a thread that does not own the semaphore ca
 third, A semaphore spans system scope and exists as a file on the filesystem.
 A mutex, on the other hand, has process scope and is automatically cleaned up when the process terminates.
 
+and here's the definition of mutex and semaphore 
+
+Mutex ) 
+Preventing multiple threads from accessing shared resource data
+It is a technique that allows the running time of threads with critical section to be executed independently so that they do not overlap with each other. Locking and unlocking are used to coordinate access to shared resources of multiple 
+
+Semaphore )
+Preventing multiple processes from accessing shared resource data. A semaphore can be thought of as a simple counter representing the state of a resource. It is usually used for a resource that has been secured for a relatively long time. or synchronization technology.
